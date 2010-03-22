@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang='en'>
+  <head>
+    <title>File: README.rdoc [Savon - Heavy metal Ruby SOAP client library]</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <link href='../rdoc-style.css' media='screen' rel='stylesheet' type='text/css'>
+    <script type='text/javascript'>
+      //<![CDATA[
+        function popupCode(url) {
+          window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+        }
+        
+        function toggleCode(id) {
+          var code = document.getElementById(id)
+        
+          code.style.display = code.style.display != 'block' ? 'block' : 'none'
+          return true
+        }
+        
+        // Make codeblocks hidden by default
+        document.writeln('<' + 'style type="text/css">.method .source pre { display: none }<\/style>')
+      //]]>
+    </script>
+  </head>
+  <body class='page'>
+    <div class='file' id='wrapper'>
+      <div class='header'>
+        <div class='name'>README.rdoc</div>
+        <div class='paths'>
+          README.rdoc
+          (<a href="http://github.com/rubiii/savon/tree/master/README.rdoc">view online</a>)
+        </div>
+        <div class='last-update'>
+          Last Update:
+          <span class='datetime'>Sun Mar 21 18:54:35 +0100 2010</span>
+        </div>
+      </div>
+      <div id='content'>
+        <div id='text'>
+          <div id='description'>
+            <h1><a href="../classes/Savon.html">Savon</a></h1>
+            <h4>Heavy metal Ruby SOAP client library</h4>
+            <p>
+            <a href="http://savon.rubiii.com">Documentation</a> | <a
+            href="http://getcaliper.com/caliper/project?repo=git://github.com/rubiii/savon.git">Metrics</a>
+            </p>
+            <h2>Installation</h2>
+            <pre>$ gem install savon</pre>
+            <p>
+            <a href="../classes/Savon.html">Savon</a> expects you to be familiar with
+            SOAP, WSDL and tools like soapUI.
+            </p>
+            <h2>Instantiate a client</h2>
+            <p>
+            Instantiate <a href="../classes/Savon/Client.html">Savon::Client</a>,
+            passing in the WSDL of your service.
+            </p>
+            <pre>client = Savon::Client.new &quot;http://example.com/UserService?wsdl&quot;</pre>
+            <p>
+            For production, it is highly recommended to not use <a
+            href="../classes/Savon/WSDL.html">Savon::WSDL</a>. Information on <a
+            href="http://savon.rubiii.com/docs/latest/classes/Savon/WSDL.html">how to
+            disable the WSDL</a>.
+            </p>
+            <h2>Calling a SOAP action</h2>
+            <p>
+            Assuming your service applies to the defaults, you can now call any
+            available SOAP action.
+            </p>
+            <pre>response = client.get_all_users</pre>
+            <p>
+            <a href="../classes/Savon.html">Savon</a> lets you call SOAP actions using
+            snake_case, because even though they will propably be written in
+            lowerCamelCase or CamelCase, it just feels much more natural.
+            </p>
+            <h2>The WSDL object</h2>
+            <p>
+            <a href="../classes/Savon/WSDL.html">Savon::WSDL</a> represents the WSDL of
+            your service, including information like the namespace <a
+            href="../classes/URI.html">URI</a> and available SOAP actions.
+            </p>
+            <pre>client.wsdl.soap_actions&#x000A;=&gt; [:get_all_users, :get_user_by_id, :user_magic]</pre>
+            <h2>The SOAP object</h2>
+            <p>
+            <a href="../classes/Savon/SOAP.html">Savon::SOAP</a> represents the SOAP
+            request. Pass a block to your SOAP call and the SOAP object is passed to it
+            as the first argument. The object allows setting the SOAP version, header,
+            body and namespaces per request.
+            </p>
+            <pre>response = client.get_user_by_id { |soap| soap.body = { :id =&gt; 666 } }</pre>
+            <h2>The WSSE object</h2>
+            <p>
+            <a href="../classes/Savon/WSSE.html">Savon::WSSE</a> represents WSSE
+            authentication. Pass a block to your SOAP call and the WSSE object is
+            passed to it as the second argument. The object allows setting the WSSE
+            username, password and whether to use digest authentication.
+            </p>
+            <pre>response = client.get_user_by_id do |soap, wsse|&#x000A;  wsse.username = &quot;gorilla&quot;&#x000A;  wsse.password = &quot;secret&quot;&#x000A;  soap.body = { :id =&gt; 666 }&#x000A;end</pre>
+            <h2>The Response object</h2>
+            <p>
+            <a href="../classes/Savon/Response.html">Savon::Response</a> represents the
+            HTTP and SOAP response. It contains and raises errors in case of an HTTP
+            error or SOAP fault (unless disabled). Also you can get the response as XML
+            (for parsing it with an XML library) or translated into a <a
+            href="../classes/Hash.html">Hash</a>.
+            </p>
+            <h2>HTTP errors and SOAP faults</h2>
+            <p>
+            <a href="../classes/Savon.html">Savon</a> raises a <a
+            href="../classes/Savon/SOAPFault.html">Savon::SOAPFault</a> in case of a
+            SOAP fault and a <a
+            href="../classes/Savon/HTTPError.html">Savon::HTTPError</a> in case of an
+            HTTP error. More information: <a
+            href="http://savon.rubiii.com/docs/latest/classes/Savon/Response.html">Errors</a>
+            </p>
+            <h2>Logging</h2>
+            <p>
+            <a href="../classes/Savon.html">Savon</a> logs each request and response to
+            STDOUT. But there are a couple of options to change the default behavior.
+            More information: <a
+            href="http://savon.rubiii.com/docs/latest/classes/Savon/Request.html">Logging</a>
+            </p>
+          </div>
+          <div id='section'>
+          </div>
+        </div>
+      </div>
+      <div id='footer-push'></div>
+    </div>
+    <div id='footer'>
+      <a href="http://github.com/mislav/hanna/tree/master"><strong>Hanna</strong> RDoc template</a>
+    </div>
+  </body>
+</html>

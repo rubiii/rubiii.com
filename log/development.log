@@ -1,0 +1,756 @@
+/!\ FAILSAFE /!\  Sat Mar 13 21:47:55 +0100 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/commands/server.rb:111
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Mar 13 22:03:22 +0100 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/rubiii/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/commands/server.rb:111
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:04:56) [GET]
+
+ActionView::MissingTemplate (Missing template home/index.erb in view path app/views):
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:05:28) [GET]
+
+ActionView::MissingTemplate (Missing template home/index.erb in view path app/views):
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:05:29) [GET]
+
+ActionView::MissingTemplate (Missing template home/index.erb in view path app/views):
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:05:30) [GET]
+
+ActionView::MissingTemplate (Missing template home/index.erb in view path app/views):
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/rubiii/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:07:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 27ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:07:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:11:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:11:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:11:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:45) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:45) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:16:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:17:30) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:17:30) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:17:31) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:17:32) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:17:33) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:41:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 22:44:08) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 23:04:15) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 23:36:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-13 23:36:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-14 00:26:30) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:06:44) [GET]
+
+NoMethodError (undefined method `redirect' for #<DocsController:0x1034a8158>):
+  app/controllers/docs_controller.rb:4:in `latest'
+  haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:07:34) [GET]
+Redirected to http://localhost:3000/docs/0.7.6
+Completed in 1ms (DB: 0) | 0 [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:07:39) [GET]
+
+ActionController::RoutingError (No route matches "/docs/0.7.6" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:07:44) [GET]
+Redirected to http://localhost:3000/docs/0.7.6
+Completed in 2ms (DB: 0) | 0 [http://localhost/]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:07:45) [GET]
+Redirected to http://localhost:3000/docs/0.7.6
+Completed in 1ms (DB: 0) | 0 [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:07:52) [GET]
+
+ActionController::RoutingError (No route matches "/docs/0.7.6" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:08:28) [GET]
+Redirected to http://localhost:3000/docs/0.7.6
+Completed in 1ms (DB: 0) | 0 [http://localhost/]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:08:55) [GET]
+Redirected to http://localhost:3000/docs/0.7.6
+Completed in 1ms (DB: 0) | 0 [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:11:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:11:52) [GET]
+Redirected to http://localhost:3000/docs/0.7.6
+Completed in 2ms (DB: 0) | 0 [http://localhost/docs/latest]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:15:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:15:35) [GET]
+Redirected to http://localhost:3000/docs/0.7.6
+Completed in 1ms (DB: 0) | 0 [http://localhost/docs/latest]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:23:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:23:30) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:23:31) [GET]
+
+ActionController::RoutingError (No route matches {:action=>"bla"}):
+  app/controllers/docs_controller.rb:4:in `latest'
+  haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:23:53) [GET]
+
+ActionController::RoutingError (No route matches {:action=>"bla", :contoller=>"docs"}):
+  app/controllers/docs_controller.rb:4:in `latest'
+  haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:23:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:23:56) [GET]
+
+ActionController::RoutingError (No route matches {:action=>"bla", :contoller=>"docs"}):
+  app/controllers/docs_controller.rb:4:in `latest'
+  haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:24:05) [GET]
+
+ActionController::RoutingError (No route matches {:action=>"bla", :contoller=>"docs"}):
+  app/controllers/docs_controller.rb:4:in `latest'
+  haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:24:17) [GET]
+Redirected to http://localhost:3000/docs/0.7.6
+Completed in 1ms (DB: 0) | 0 [http://localhost/docs/latest]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:24:27) [GET]
+Rendering /docs/0.7.6
+
+ActionView::MissingTemplate (Missing template /docs/0.7.6 in view path app/views):
+  haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+  app/controllers/docs_controller.rb:4:in `latest'
+  haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:25:08) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:25:09) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/docs/latest]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:25:14) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/docs/latest]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:25:20) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/docs/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:25:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:25:27) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/docs/latest]
+
+
+Processing DocsController#latest (for 127.0.0.1 at 2010-03-21 19:25:30) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/docs/latest]
+** SubdomainFu: initialized properly
+** SubdomainFu: initialized properly
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:51:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `latest_docs_url' for #<ActionView::Base:0x101f20d30>) on line #5 of app/views/home/index.haml:
+2: %h2 Heavy metal Ruby SOAP client library
+3: 
+4: %ul
+5:   %li= link_to "documentation", latest_docs_url
+6:   %li &hellip;
+
+    app/views/home/index.haml:5:in `_run_haml_app47views47home47index46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (86.3ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:52:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `latest_docs_url' for #<ActionView::Base:0x1035bc620>) on line #5 of app/views/home/index.haml:
+2: %h2 Heavy metal Ruby SOAP client library
+3: 
+4: %ul
+5:   %li= link_to "documentation", latest_docs_url
+6:   %li &hellip;
+
+    app/views/home/index.haml:5:in `_run_haml_app47views47home47index46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (39.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:52:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 59ms (View: 58, DB: 0) | 200 OK [http://localhost/]
+** SubdomainFu: initialized properly
+** SubdomainFu: initialized properly
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:53:08) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `savon_latest_docs_url' for #<ActionView::Base:0x101f2ae20>) on line #5 of app/views/home/index.haml:
+2: %h2 Heavy metal Ruby SOAP client library
+3: 
+4: %ul
+5:   %li= link_to "documentation", savon_latest_docs_url
+6:   %li &hellip;
+
+    app/views/home/index.haml:5:in `_run_haml_app47views47home47index46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (88.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+** SubdomainFu: initialized properly
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:53:41) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-21 19:54:04) [GET]
+
+ActionController::RoutingError (No route matches "/docs/latest" with {:method=>:get, :host=>"localhost", :domain=>"localhost", :subdomain=>nil}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:54:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+** SubdomainFu: initialized properly
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 19:55:17) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing Savon::DocsController#latest (for 127.0.0.1 at 2010-03-21 19:55:21) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://savon.localhost/docs/latest]
+
+
+Processing Savon::DocsController#latest (for 127.0.0.1 at 2010-03-21 19:55:29) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://savon.localhost/docs/latest]
+
+
+Processing Savon::DocsController#latest (for 127.0.0.1 at 2010-03-21 19:55:33) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://savon.localhost/docs/latest]
+
+
+Processing Savon::DocsController#latest (for 127.0.0.1 at 2010-03-21 19:55:35) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://savon.localhost/docs/]
+
+
+Processing Savon::HomeController#index (for 127.0.0.1 at 2010-03-21 19:55:37) [GET]
+Rendering template within layouts/application
+Rendering savon/home/index
+Completed in 54ms (View: 53, DB: 0) | 200 OK [http://savon.localhost/]
+
+
+Processing Savon::HomeController#index (for 127.0.0.1 at 2010-03-21 19:59:09) [GET]
+Rendering template within layouts/application
+Rendering savon/home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://savon.localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 20:00:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 20:00:45) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 20:00:56) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing Savon::DocsController#latest (for 127.0.0.1 at 2010-03-21 20:00:57) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://savon.localhost/docs/latest]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-21 20:01:06) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing Savon::HomeController#index (for 127.0.0.1 at 2010-03-21 20:01:08) [GET]
+Rendering template within layouts/application
+Rendering savon/home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://savon.localhost/]
+
+
+Processing Savon::DocsController#latest (for 127.0.0.1 at 2010-03-21 20:01:12) [GET]
+Redirected to /docs/0.7.6
+Completed in 1ms (DB: 0) | 302 Found [http://savon.localhost/docs/latest]

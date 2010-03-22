@@ -1,0 +1,21 @@
+body { background:#141414 url(/images/background.png) no-repeat; color:#e9e6ae; font:14px/22px georgia,times,serif; margin-left:86px; }
+
+h1 { background-repeat:no-repeat; margin-bottom:8px; text-indent:-9000px; }
+	h1.rubiii { background-image:url(/images/logos/rubiii.png); height:88px; margin-top:194px; width:276px; }
+	h1.savon { background-image:url(/images/logos/savon.png); height:63px; margin-top:220px; width:308px; }
+
+a:link, a:visited { color:#e9e6ae; text-decoration:underline; }
+a:hover, a:active { color:#e9e6ae; text-decoration:none; }
+
+h2 { color:#3c9184; font-style:italic; margin-bottom:30px; }
+h3 { color:#3c9184; font-size:16px; font-style:italic; letter-spacing:0.07em; margin:35px 0 10px; }
+
+h4 { margin-left:20px; }
+	h4 a:link, h4 a:visited, h4 a:hover, h4 a:active { color:#8bc00b; display:block; float:left; }
+	h4 p { border-left:1px solid #2a2c2b; float:left; margin-left:15px; padding-left:30px; }
+
+ul { margin-left:20px; }
+	li { border-right:1px solid #2a2c2b; display:block; float:left; margin-right:15px; padding-right:30px; }
+	li.last { border:0; margin:0; padding:0; }
+
+.clear { clear:both; font-size:0; line-height:0; }
