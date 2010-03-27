@@ -1,9 +1,6 @@
 body { background:#141414 url(/images/background.png) no-repeat; color:#e9e6ae; font:14px/22px georgia,times,serif; margin-left:86px; }
 
 h1 { background-repeat:no-repeat; margin-bottom:8px; text-indent:-9000px; }
-	h1.rubiii { background-image:url(/images/logos/rubiii.png); height:88px; margin-top:194px; width:276px; }
-	h1.savon { background-image:url(/images/logos/savon.png); height:63px; margin-top:220px; width:308px; }
-	h1.ambience { background-image:url(/images/logos/ambience.png); height:88px; margin-top:194px; width:494px; }
 
 a:link, a:visited { color:#e9e6ae; text-decoration:underline; }
 a:hover, a:active { color:#e9e6ae; text-decoration:none; }
@@ -15,8 +12,26 @@ h4 { clear:both; margin-left:20px; }
 	h4 a:link, h4 a:visited, h4 a:hover, h4 a:active { color:#8bc00b; display:block; float:left; }
 	h4 p { border-left:1px solid #2a2c2b; float:left; margin-left:15px; padding-left:30px; }
 
+p.first { margin-top:30px; }
+
 ul { margin-left:20px; }
 	li { border-right:1px solid #2a2c2b; display:block; float:left; margin-right:15px; padding-right:30px; }
 	li.last { border:0; margin:0; padding:0; }
+
+/* titles */
+
+.rubiii { background-image:url(/images/titles/rubiii.png); height:88px; margin-top:194px; width:276px; }
+.savon { background-image:url(/images/titles/savon.png); height:63px; margin-top:220px; width:308px; }
+.ambience { background-image:url(/images/titles/ambience.png); height:88px; margin-top:194px; width:494px; }
+.error404 { background-image:url(/images/titles/404.png); height:81px; margin-top:202px; width:192px; }
+.error422 { background-image:url(/images/titles/422.png); height:79px; margin-top:202px; width:191px; }
+.error500 { background-image:url(/images/titles/500.png); height:82px; margin-top:200px; width:193px; }
+
+/* colors */
+
+.blue { color:#3c9184; }
+.red { color:#e03517; }
+
+/* useful */
 
 .clear { clear:both; font-size:0; line-height:0; }
