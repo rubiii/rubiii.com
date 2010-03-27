@@ -1,0 +1,6 @@
+de:
+  apps:
+    savon:
+      tagline: "heavy metal ruby soap client library"
+    ambience:
+      tagline: "app configuration feat. yaml and jvm properties"
