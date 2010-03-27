@@ -2,8 +2,9 @@ require "spec_helper"
 
 describe HomeController do
 
-  it "should use HomeController" do
-    controller.should be_an_instance_of(HomeController)
+  it "should render the :index template" do
+    response.should be_success
+    response.should render_template(:index)
   end
 
 end
