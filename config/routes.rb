@@ -12,7 +12,7 @@ ActionController::Routing::Routes.draw do |map|
     savon.home        "",                       :controller => "savon/home"
     savon.docs        "docs",                   :controller => "savon/docs", :action => "latest"
     savon.latest_docs "docs/latest",            :controller => "savon/docs", :action => "latest"
-    map.connect       "docs/latest/*deep_path", :controller => "savon/docs", :action => "latest"
+    map.connect       "docs/latest/*deep_link", :controller => "savon/docs", :action => "latest"
   end
 
   map.home "", :controller => "ambience/home", :conditions => { :subdomain => "ambience" }

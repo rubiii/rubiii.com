@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe HomeController do
+describe Savon::HomeController do
   integrate_views
 
   it "should render the :index template" do

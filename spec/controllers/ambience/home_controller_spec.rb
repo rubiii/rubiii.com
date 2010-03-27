@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe HomeController do
+describe Ambience::HomeController do
   integrate_views
 
   it "should render the :index template" do
