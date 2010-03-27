@@ -8,13 +8,14 @@ ActionController::Routing::Routes.draw do |map|
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)
-
   map.with_options :conditions => { :subdomain => "savon" } do |savon|
-    savon.home        "",                       :controller => "savon/home", :action => "index"
+    savon.home        "",                       :controller => "savon/home"
     savon.docs        "docs",                   :controller => "savon/docs", :action => "latest"
     savon.latest_docs "docs/latest",            :controller => "savon/docs", :action => "latest"
     map.connect       "docs/latest/*deep_path", :controller => "savon/docs", :action => "latest"
   end
+
+  map.home "", :controller => "ambience/home", :conditions => { :subdomain => "ambience" }
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
