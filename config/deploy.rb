@@ -20,7 +20,8 @@ set :user, "ssh-#{domainfactory_account_number}-dh"
 set :ssh_options, { :forward_agent => true }
 
 namespace :deploy do
-  task :restart, :roles => :app do             
+  task :restart, :roles => :app do
+    run "rm #{current_release}/public/stylesheets/all.css"
     run "touch #{current_release}/tmp/restart.txt"
   end
 end
