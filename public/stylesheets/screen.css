@@ -11,7 +11,7 @@ h2, h3 { color:#3c9184; font-style:italic; }
 
 h4 { clear:both; margin-left:20px; }
 	h4 a:link, h4 a:visited, h4 a:hover, h4 a:active { color:#8bc00b; display:block; float:left; }
-	h4 p { border-left:1px solid #2a2c2b; float:left; margin-left:15px; padding-left:30px; }
+	h4 strong { border-left:1px solid #2a2c2b; float:left; margin-left:15px; padding-left:30px; }
 
 /* elements */
 

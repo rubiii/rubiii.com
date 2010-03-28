@@ -9,9 +9,9 @@
 %h3 projects
 %h4
   = link_to "savon", home_url(:subdomain => "savon")
-  %p= t "apps.savon.tagline"
+  %strong= t "apps.savon.tagline"
 %h4
   = link_to "ambience", home_url(:subdomain => "ambience")
-  %p= t "apps.ambience.tagline"
+  %strong= t "apps.ambience.tagline"
 
 = render "shared/articles", :articles => @articles unless @articles.empty?
