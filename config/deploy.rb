@@ -3,7 +3,7 @@ eval IO.read("/Users/rubiii/deploy.domainfactory")
 set :application, "rubiii"
 set :rails_env, :production
 
-set :deploy_to, "/kunden/#{df_account_number}_21033/apps/#{application}"
+set :deploy_to, "#{df_account_folder}/apps/#{application}"
 set :use_sudo, false
 
 default_run_options[:pty] = true
@@ -13,9 +13,9 @@ set :repository, "git@github.com:rubiii/rubiii.com.git"
 
 role :app, "rubiii.com"
 role :web, "rubiii.com"
-role :db, "https://mysql5.rubiii.com", :primary => true
+role :db, "rubiii.com", :primary => true
 
-set :user, "ssh-#{df_account_number}-dh"
+set :user, df_ssh_username
 set :ssh_options, { :forward_agent => true }
 
 namespace :deploy do
@@ -24,15 +24,16 @@ namespace :deploy do
   end
 end
 
-before "deploy:restart" do
-  database_configuration = render :template => <<-EOF
+after "deploy:update_code" do
+  database_configuration = "
 development:
   adapter: mysql
   encoding: utf8
-  database: <%= df_db_database %>
+  database: #{df_db_database}
   pool: 5
-  username: <%= df_db_username %>
-  password: <%= df_db_password %>
+  username: #{df_db_username}
+  password: #{df_db_password}
+  host: #{df_db_host}
   socket: /var/run/mysqld/mysqld.sock
 
 test:
@@ -45,13 +46,9 @@ production:
   adapter: sqlite3
   database: db/production.sqlite3
   pool: 5
-  timeout: 5000
-EOF
+  timeout: 5000"
 
   run "mkdir -p #{deploy_to}/#{shared_dir}/config" 
   put database_configuration, "#{deploy_to}/#{shared_dir}/config/database.yml" 
-end
-
-after "update_code" do
   run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml" 
 end
