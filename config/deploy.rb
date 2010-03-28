@@ -25,28 +25,7 @@ namespace :deploy do
 end
 
 after "deploy:update_code" do
-  database_configuration = "
-development:
-  adapter: mysql
-  encoding: utf8
-  database: #{df_db_database}
-  pool: 5
-  username: #{df_db_username}
-  password: #{df_db_password}
-  host: #{df_db_host}
-  socket: /var/run/mysqld/mysqld.sock
-
-test:
-  adapter: sqlite3
-  database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
-
-production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000"
+  database_configuration = IO.read("/Users/rubiii/database.domainfactory")
 
   run "mkdir -p #{deploy_to}/#{shared_dir}/config" 
   put database_configuration, "#{deploy_to}/#{shared_dir}/config/database.yml" 
