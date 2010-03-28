@@ -2,7 +2,7 @@ body { background:#141414 url(/images/background.png) no-repeat; color:#e9e6ae; 
 
 /* headlines */
 
-h1 { font:bold italic 100px/40px BPdiet,Georgia,serif; margin:225px 0 30px 0; }
+h1 { font:bold italic 100px/40px Dubtronic,Georgia,serif; margin:225px 0 30px 0; }
 
 h2, h3 { color:#3c9184; font-style:italic; }
 	h2 { margin-bottom:30px; }
@@ -29,6 +29,13 @@ ul { margin-left:20px; }
 
 @font-face { font-family:BPdiet; src:url(/fonts/BPdiet.otf) format("opentype"); }
 @font-face { font-family:BPdiet; font-style:italic; src:url(/fonts/BPdiet.otf) format("opentype"); }
+
+@font-face { font-family:Chunkfive; font-style:italic; src:url(/fonts/Chunkfive.otf) format("opentype"); }
+
+@font-face { font-family:Blackout; font-style:italic; src:url(/fonts/Blackout-Midnight.ttf) format("truetype"); }
+
+@font-face { font-family:Dubtronic; font-style:italic; src:url(/fonts/Dubtronic-Inline.otf) format("opentype"); }
+
 
 /* colors */
 
