@@ -1,9 +1,9 @@
 class HomeController < ApplicationController
 
-  ArticleCategory = :root
+  caches_page :index
 
   def index
-    @articles = Article.all_by_category ArticleCategory
+    @articles = Article.all_by_category :root
   end
 
   def show
