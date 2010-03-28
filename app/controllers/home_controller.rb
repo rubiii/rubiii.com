@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-  caches_page :index
+  #caches_action :index, :cache_path => CachePath.join("root")
 
   def index
     @articles = Article.all_by_category :root
