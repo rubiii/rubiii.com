@@ -1,36 +1,40 @@
 body { background:#141414 url(/images/background.png) no-repeat; color:#e9e6ae; font:14px/22px georgia,times,serif; margin-left:86px; }
 
-h1 { background-repeat:no-repeat; margin-bottom:8px; text-indent:-9000px; }
+/* headlines */
 
-a:link, a:visited { color:#e9e6ae; text-decoration:underline; }
-a:hover, a:active { color:#e9e6ae; text-decoration:none; }
+h1 { font:bold italic 100px/40px BPdiet,Georgia,serif; margin:225px 0 30px 0; }
 
-h2 { color:#3c9184; font-style:italic; margin-bottom:30px; }
-h3 { color:#3c9184; clear:both;  font-size:16px; font-style:italic; letter-spacing:0.07em; padding:30px 0 10px; }
+h2, h3 { color:#3c9184; font-style:italic; }
+	h2 { margin-bottom:30px; }
+	h3 { clear:both; font-size:16px; letter-spacing:0.07em; padding:30px 0 10px; }
+		h3.articles { padding-top:60px; }
 
 h4 { clear:both; margin-left:20px; }
 	h4 a:link, h4 a:visited, h4 a:hover, h4 a:active { color:#8bc00b; display:block; float:left; }
 	h4 p { border-left:1px solid #2a2c2b; float:left; margin-left:15px; padding-left:30px; }
 
+/* elements */
+
+a:link, a:visited { color:#e9e6ae; text-decoration:underline; }
+a:hover, a:active { color:#e9e6ae; text-decoration:none; }
+
+p { margin-left:20px; }
 p.first { margin-top:30px; }
 
 ul { margin-left:20px; }
 	li { border-right:1px solid #2a2c2b; display:block; float:left; margin-right:15px; padding-right:30px; }
 	li.last { border:0; margin:0; padding:0; }
 
-/* titles */
+/* fonts */
 
-.rubiii { background-image:url(/images/titles/rubiii.png); height:88px; margin-top:194px; width:276px; }
-.savon { background-image:url(/images/titles/savon.png); height:63px; margin-top:220px; width:308px; }
-.ambience { background-image:url(/images/titles/ambience.png); height:88px; margin-top:194px; width:494px; }
-.error404 { background-image:url(/images/titles/404.png); height:81px; margin-top:202px; width:192px; }
-.error422 { background-image:url(/images/titles/422.png); height:79px; margin-top:202px; width:191px; }
-.error500 { background-image:url(/images/titles/500.png); height:82px; margin-top:200px; width:193px; }
+@font-face { font-family:BPdiet; src:url(/fonts/BPdiet.otf) format("opentype"); }
+@font-face { font-family:BPdiet; font-style:italic; src:url(/fonts/BPdiet.otf) format("opentype"); }
 
 /* colors */
 
-.blue { color:#3c9184; }
-.red { color:#e03517; }
+.green, a.green { color:#8bc00b; }
+.blue, a.blue { color:#3c9184; }
+.red, a.red { color:#e03517; }
 
 /* useful */
 

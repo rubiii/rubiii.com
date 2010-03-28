@@ -1,10 +1,12 @@
 - title "savon - heavy metal ruby soap client library"
 
-%h1.savon savon
+%h1 savon
 %h2= t "apps.savon.tagline"
 
 %ul
-  %li= link_to "documentation", latest_docs_url
+  %li= link_to "documentation", latest_docs_url, :class => "green"
   %li= link_to "github", "http://github.com/rubiii/savon"
   %li= link_to "rubygems", "http://rubygems.org/gems/savon"
   %li.last= link_to "ruby toolbox", "http://www.ruby-toolbox.com/categories/soap.html"
+
+= render "shared/articles", :articles => @articles unless @articles.empty?

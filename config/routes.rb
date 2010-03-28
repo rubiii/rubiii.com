@@ -12,13 +12,18 @@ ActionController::Routing::Routes.draw do |map|
     savon.home        "",                       :controller => "savon/home"
     savon.docs        "docs",                   :controller => "savon/docs", :action => "latest"
     savon.latest_docs "docs/latest",            :controller => "savon/docs", :action => "latest"
-    map.connect       "docs/latest/*deep_link", :controller => "savon/docs", :action => "latest"
+    savon.connect     "docs/latest/*deep_link", :controller => "savon/docs", :action => "latest"
+    
+    savon.resources :articles
   end
 
-  map.home "", :controller => "ambience/home", :conditions => { :subdomain => "ambience" }
+  map.with_options :conditions => { :subdomain => "ambience" } do |ambience|
+    ambience.home "", :controller => "ambience/home"
+  end
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
+  map.resources :articles
 
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }

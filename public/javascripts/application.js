@@ -1,2 +1,10 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(function() {
+
+	/* animate project links and description */
+	$("h4 > a").mouseover(function() {
+	  $(this).next("p").animate({ marginLeft: "30px", paddingLeft: "15px" }, 500, "easeOutBack");
+  }).mouseout(function() {
+	  $(this).next("p").animate({ marginLeft: "15px", paddingLeft: "30px" }, 500, "easeOutBack");
+	});
+
+});
