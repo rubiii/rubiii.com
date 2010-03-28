@@ -1,4 +1,4 @@
-body { background:#141414 url(/images/background.png) no-repeat; color:#e9e6ae; font:14px/22px georgia,times,serif; margin-left:86px; }
+body { background:#141414 url(/images/background.png) no-repeat; color:#e9e6ae; font:14px/22px georgia,times,serif; margin-left:85px; }
 
 /* headlines */
 
@@ -10,8 +10,8 @@ h2, h3 { color:#3c9184; font-style:italic; }
 		h3.articles { padding-top:60px; }
 
 h4 { clear:both; margin-left:20px; }
-	h4 a:link, h4 a:visited, h4 a:hover, h4 a:active { color:#8bc00b; display:block; float:left; }
-	h4 strong { border-left:1px solid #2a2c2b; float:left; margin-left:15px; padding-left:30px; }
+	h4 a:link, h4 a:visited, h4 a:hover, h4 a:active { color:#8bc00b; }
+	h4 strong { border-left:1px solid #2a2c2b; margin-left:15px; padding-left:30px; }
 
 /* elements */
 
@@ -24,6 +24,12 @@ p.first { margin-top:30px; }
 ul { margin-left:20px; }
 	li { border-right:1px solid #2a2c2b; display:block; float:left; margin-right:15px; padding-right:30px; }
 	li.last { border:0; margin:0; padding:0; }
+
+/* layout */
+
+.left { float:left; }
+.right { float:left; margin-left:100px; }
+  .right h3.articles { padding-top:30px; }
 
 /* fonts */
 
