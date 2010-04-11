@@ -3,10 +3,6 @@ require "spec_helper"
 describe Savon::HomeController do
   integrate_views
 
-  it "should have an ArticleCategory constant holding the category to fetch articles for" do
-    Savon::HomeController::ArticleCategory.should == :savon
-  end
-
   it "should render the :index template" do
     get :index
     

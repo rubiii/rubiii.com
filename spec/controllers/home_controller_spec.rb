@@ -3,10 +3,6 @@ require "spec_helper"
 describe HomeController do
   integrate_views
 
-  it "should have an ArticleCategory constant holding the category to fetch articles for" do
-    HomeController::ArticleCategory.should == :root
-  end
-
   it "should render the :index template" do
     get :index
     
