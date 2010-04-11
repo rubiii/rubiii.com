@@ -4,5 +4,6 @@ log/*
 tmp/*
 config/database.yml
 public/cache
+public/docs
 public/stylesheets/all.css
 public/javascripts/all.js

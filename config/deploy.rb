@@ -32,14 +32,19 @@ namespace :deploy do
   end
 end
 
-# database.yml
+# upload and symlink database.yml from shared folder
 after "deploy:update_code" do
   database_yml = IO.read("/Users/rubiii/database.domainfactory")
 
-  run "mkdir -p #{deploy_to}/#{shared_dir}/config" 
-  put database_yml, "#{deploy_to}/#{shared_dir}/config/database.yml" 
-  run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml" 
+  run "mkdir -p #{deploy_to}/#{shared_dir}/config"
+  put database_yml, "#{deploy_to}/#{shared_dir}/config/database.yml"
+  run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml"
 end
 
-# cleanup
+# symlink public/docs from shared folder
+after "deploy:update_code" do
+  run "ln -nfs #{deploy_to}/#{shared_dir}/docs #{release_path}/public/docs" 
+end
+
+# cleanup after deployment
 after "deploy", "deploy:cleanup"
