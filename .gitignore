@@ -3,6 +3,7 @@
 log/*
 tmp/*
 config/database.yml
+config/newrelic.yml
 public/cache
 public/docs
 public/stylesheets/all.css
