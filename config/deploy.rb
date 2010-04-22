@@ -1,4 +1,4 @@
-eval IO.read("~/deploy.domainfactory")
+eval IO.read("/Users/rubiii/deploy.domainfactory")
 
 set :application, "rubiii"
 set :rails_env, :production
@@ -34,7 +34,7 @@ end
 
 # upload and symlink database.yml from shared folder
 after "deploy:update_code" do
-  database_yml = IO.read("~/database.domainfactory")
+  database_yml = IO.read("/Users/rubiii/database.domainfactory")
 
   run "mkdir -p #{deploy_to}/#{shared_dir}/config"
   put database_yml, "#{deploy_to}/#{shared_dir}/config/database.yml"
@@ -43,7 +43,7 @@ end
 
 # upload and symlink newrelic.yml from shared folder
 after "deploy:update_code" do
-  newrelic_yml = IO.read("~/newrelic.domainfactory")
+  newrelic_yml = IO.read("/Users/rubiii/newrelic.domainfactory")
 
   run "mkdir -p #{deploy_to}/#{shared_dir}/config"
   put newrelic_yml, "#{deploy_to}/#{shared_dir}/config/newrelic.yml"
