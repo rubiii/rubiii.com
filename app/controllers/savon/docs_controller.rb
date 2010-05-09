@@ -12,7 +12,7 @@ private
 
   # Returns the path to the latest documentation.
   def latest_docs_path
-    "/docs/" + FileList["public/docs/*"].last.split("/").last + "/"
+    "/docs/" + FileList["public/docs/*"].sort.last.split("/").last + "/"
   end
 
 end
