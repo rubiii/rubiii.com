@@ -19,9 +19,11 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => "0.6", :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem "subdomain-fu", :version => ">= 0.5"
-  config.gem "friendly_id",  :version => ">= 2.3"
-  config.gem "newrelic_rpm", :version => ">= 2.10"
+  config.gem "haml",             :version => "2.2.24"
+  config.gem "subdomain-fu",     :version => ">= 0.5"
+  config.gem "friendly_id",      :version => ">= 2.3"
+  config.gem "newrelic_rpm",     :version => ">= 2.10"
+  config.gem "hoptoad_notifier", :version => "2.2.6"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
