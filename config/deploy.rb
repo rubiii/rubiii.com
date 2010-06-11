@@ -50,6 +50,15 @@ after "deploy:update_code" do
   run "ln -nfs #{deploy_to}/#{shared_dir}/config/newrelic.yml #{release_path}/config/newrelic.yml"
 end
 
+# upload and symlink hoptoad.rb initializer from shared folder
+after "deploy:update_code" do
+  hoptoad_rb = IO.read("/Users/rubiii/hoptoad.domainfactory")
+
+  run "mkdir -p #{deploy_to}/#{shared_dir}/config/initializers"
+  put hoptoad_rb, "#{deploy_to}/#{shared_dir}/config/initializers/hoptoad.rb"
+  run "ln -nfs #{deploy_to}/#{shared_dir}/config/initializers/hoptoad.rb #{release_path}/config/initializers/hoptoad.rb"
+end
+
 # symlink public/docs from shared folder
 after "deploy:update_code" do
   run "ln -nfs #{deploy_to}/#{shared_dir}/docs #{release_path}/public/docs" 
