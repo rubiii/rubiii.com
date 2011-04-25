@@ -1,0 +1,64 @@
+@import compass/reset
++reset-html5
+
+@font-face
+  font-family: Dubtronic
+  font-style: italic
+  src: url(../fonts/Dubtronic-Inline.otf) format("opentype")
+
+body
+  background: #141414 url(../images/background.png) no-repeat
+  color: #e9e6ae
+  font: 14px/16px georgia,times,serif
+  margin-left: 85px
+
+h1
+  font: bold italic 100px/40px Dubtronic,georgia,serif
+  margin: 155px 0 55px 0
+
+h2
+  text-indent: -9000px
+  height: 0
+
+h3
+  color: #3c9184
+  font-size: 16px
+  font-style: italic
+  padding: 50px 0 10px
+
+a
+  &:link, &:visited
+    color: #e9e6ae
+    text-decoration: underline
+  &:hover, &:active
+    color: #e9e6ae
+    text-decoration: none
+
+li, dt, dd
+  margin-top: 5px
+  margin-bottom: 5px
+
+li, dd
+  border-left: 1px solid #2a2c2b
+  margin-left: 35px
+  padding-left: 15px
+
+li
+  display: inline-block
+
+  &:first-child
+    border: 0
+    padding-left: 0
+
+dl
+  margin-left: 30px
+
+  dt
+    clear: left
+    float: left
+
+    a:link, a:visited, a:hover, a:active
+      color: #8bc00b
+
+  dd
+    float: left
