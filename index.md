@@ -14,7 +14,7 @@ layout: default
 
 ### open source
 
-[savon](https://github.com/rubiii/savon)
+[savon](http://savonrb.com)
 : heavy metal ruby soap client
 
 [ambience](https://github.com/rubiii/ambience)
