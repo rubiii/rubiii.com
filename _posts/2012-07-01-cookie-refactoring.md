@@ -42,11 +42,13 @@ The method is called after every SOAP request and it receives the HTTP response 
 set_cookie(response.headers)
 ```
 
-What I noticed is, that the code reads the “Set-Cookie” header from the response and sets the
-“Cookie” header on the request. Both request and response are not part of Savon. They are
-provided by [HTTPI](https://github.com/rubiii/httpi) which is a wrapper for various HTTP clients.
+### Why does Savon know about cookies?
 
-Also cookie handling sounds like something that should be handled by the HTTP library, so I
+Savon reads the “Set-Cookie” header from the response and sets the “Cookie” header on the request.
+But both request and response are not part of Savon. They are provided by [HTTPI](https://github.com/rubiii/httpi)
+which is a wrapper for various HTTP clients.
+
+And cookie handling sounds like something that should be handled by the HTTP library. So I
 [removed the code from Savon](https://github.com/rubiii/savon/commit/92f15f) and cleaned up the
 specs. Instead of calling `set_cookie`, Savon now simply passes the last response to a new
 `set_cookies` method on the request:
@@ -54,10 +56,13 @@ specs. Instead of calling `set_cookie`, Savon now simply passes the last respons
 ``` ruby
 request.set_cookies(response)
 ```
-
 I added the `set_cookies` method to the HTTPI request object and changed some receivers to
-make it work in the new environment. Looking at the method again, you will notice that it
-knows how to extract both the name and the “name and value” from a cookie String:
+make it work in the new environment. 
+
+### Why does the method know how to read a cookie?
+
+Looking at the method again, you will notice that it knows how to extract both the name and
+the “name and value” from a cookie String:
 
 ``` ruby
 # use the cookie name as the key to the hash to allow for cookie updates and seperation
@@ -93,9 +98,11 @@ understand what it does:
 @cookies[cookie.name] = cookie.name_and_value
 ```
 
-To get the cookie Strings, the method directly accesses the “Set-Cookie” header.
-Now to use the new Cookie object instead of the Strings, I added a `cookies` method to
-the response to return exactly what I need:
+### Why does the code ask the response for its headers?
+
+To get the cookie Strings, the method directly accesses the “Set-Cookie” header
+through the response object. What I needed instead, was a method that returns a list
+of Cookie objects. Adding a `cookies` method to the response solved this issue:
 
 ``` ruby
 def cookies
@@ -118,8 +125,8 @@ end
 ```
 
 The reason for me to share this refactoring story, is that it was a great lesson for me.
-It’s all about responsibilities and asking yourself the question “why is this code here?”
-until you’re [happy with the result](https://github.com/rubiii/httpi/commit/a9e449).
+It’s all about responsibilities. Question your code and you will eventually be
+[happy with the result](https://github.com/rubiii/httpi/commit/a9e449).
 
 
 Ps. I slightly modified some examples for this context and the final commit contains
