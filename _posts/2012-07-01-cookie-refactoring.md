@@ -49,7 +49,7 @@ provided by [HTTPI](https://github.com/rubiii/httpi) which is a wrapper for vari
 Also cookie handling sounds like something that should be handled by the HTTP library, so I
 [removed the code from Savon](https://github.com/rubiii/savon/commit/92f15f) and cleaned up the
 specs. Instead of calling `set_cookie`, Savon now simply passes the last response to a new
-`set_cookies` method on the next request:
+`set_cookies` method on the request:
 
 ``` ruby
 request.set_cookies(response)
@@ -65,8 +65,8 @@ knows how to extract both the name and the “name and value” from a cookie St
 @cookies[set_cookie.split('=').first] = set_cookie.split(';').first
 ```
 
-The fact that there’s a comment to explain the code indicates that something’s wrong.
-So I moved the code that operates on the cookie String to a Cookie object:
+The fact that there’s a comment to explain what this code does indicates that something’s
+wrong. So I moved the code that operates on the cookie String to a Cookie object:
 
 ``` ruby
 class Cookie
@@ -86,8 +86,8 @@ class Cookie
 end
 ```
 
-After changing the line of code, I was able to remove the comment because now you can
-actually read it and understand what it does:
+After changing the line of code, I removed the comment because now you can actually
+understand what it does:
 
 ``` ruby
 @cookies[cookie.name] = cookie.name_and_value
