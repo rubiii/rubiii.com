@@ -12,17 +12,28 @@ class Redcarpet2Markdown < Redcarpet::Render::HTML
     "<h#{level} id='#{id}'>#{text}</h#{level}>"
   end
 
-  def block_code(code, lang)
-    lang = lang || "text"
+  def block_code(code, lang_and_context)
+    lang, context = lang_and_context.split("+")
+    lang ||= "text"
+
     path = File.join(PYGMENTS_CACHE_DIR, "#{lang}-#{Digest::MD5.hexdigest code}.html")
     cache(path) do
       colorized = Albino.colorize(code, lang)
-      add_code_tags(colorized, lang)
+      add_code_tags(colorized, lang, context)
     end
   end
 
-  def add_code_tags(code, lang)
-    code.sub(/<pre>/, "<pre><code class=\"#{lang}\">").
+  def add_code_tags(code, lang, context)
+    if context
+      context_desc = context[0,1].upcase + context[1..-1] + ":"
+      context_html = "<b>#{context_desc}</b>"
+      context_class = "context #{context}"
+    else
+      context_html = ""
+      context_class = ""
+    end
+
+    code.sub(/<pre>/, "<pre class='#{context_class}'>#{context_html}<code class=\"#{lang}\">").
          sub(/<\/pre>/, "</code></pre>")
   end
 

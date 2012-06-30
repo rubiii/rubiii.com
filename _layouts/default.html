@@ -5,10 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>rubiii - {{ page.title }}</title>
     <link rel="stylesheet" href="/stylesheets/application.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fugaz+One">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <!--[if lt IE 9]>
+      <script src="/javascripts/html5shiv.js"></script>
+    <![endif]-->
   </head>
 
   <body>
-    {{content}}
+    <div class="container">
+      <h1>rubiii</h1>
+      <ul class="profiles">
+        <li><a href="http://twitter.com/rubiii">twitter</a></li>
+        <li><a href="https://github.com/rubiii">github</a></li>
+        <li><a href="http://xing.to/dh">xing</a></li>
+      </ul>
+      <br class="clear">
+
+      {{content}}
+      <div id="disqus_thread"></div>
+    </div>
+
+    {% include disqus.html %}
     {% include analytics.html %}
   </body>
 </html>
