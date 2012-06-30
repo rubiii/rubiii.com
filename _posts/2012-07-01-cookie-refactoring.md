@@ -6,20 +6,20 @@ layout: default
 Cookie refactoring
 ------------------
 
-<time datetime="2012-06-30">June 30, 2012</time>
+<time datetime="2012-07-01">July 1, 2012</time>
 
 I recently found [pelusa](https://github.com/codegram/pelusa) and decided to give it a try.
 Pelusa is a static analysis tool that benefits from [Rubinius’](http://rubini.us) advanced support
 for working with an abstract syntax tree. I ran pelusa against [Savon](https://github.com/rubiii/savon)
 and decided to look into one of the problems from the report:
 
-> lib/savon/client.rb  
+> lib/savon/client.rb:  
 > Doesn’t use more than one indentation level inside methods  
 > &nbsp; &nbsp; There’s too much indentation in lines 111.
 
-The code it complained about grabs cookies from the last request and sets them for future ones:
+The code it complained about persists cookies and adds them to the next request:
 
-``` ruby+before
+``` ruby
 def set_cookie(headers)
   if headers['Set-Cookie']
     @cookies ||= {}
@@ -36,8 +36,7 @@ def set_cookie(headers)
 end
 ```
 
-The method accepts a Hash of HTTP headers returned by the response and is called after every
-SOAP request.
+The method is called after every SOAP request and it receives the HTTP response headers:
 
 ``` ruby
 set_cookie(response.headers)
@@ -77,11 +76,11 @@ class Cookie
   end
 
   def name
-    @cookie.split("=").first
+    @cookie.split('=').first
   end
 
   def name_and_value
-    @cookie.split(";").first
+    @cookie.split(';').first
   end
 
 end
@@ -100,13 +99,13 @@ the response to return exactly what I need:
 
 ``` ruby
 def cookies
-  Array(headers["Set-Cookie"]).map { |cookie| Cookie.new(cookie) }
+  Array(headers['Set-Cookie']).map { |cookie| Cookie.new(cookie) }
 end
 ```
 
 After these changes, here’s what the new `set_cookies` method looks like:
 
-``` ruby+after
+``` ruby
 def set_cookies(http_response)
   @cookies ||= {}
 
