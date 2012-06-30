@@ -10,7 +10,7 @@ layout: default
 
 * [twitter](http://twitter.com/rubiii)
 * [github](https://github.com/rubiii)
-* [xing](https://www.xing.com/profile/Daniel_Harrington)
+* [xing](http://xing.to/dh)
 
 ### open source
 
