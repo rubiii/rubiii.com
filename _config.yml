@@ -1,3 +1,6 @@
+name: rubiii
+description: no description
+url: http://rubiii.com
 permalink: date
 pygments: true
 exclude: ["config.rb", "Rakefile", "Gemfile", "Gemfile.lock"]
