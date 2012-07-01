@@ -37,3 +37,13 @@ namespace :compass do
   end
 
 end
+
+desc "Deploy the website"
+task :deploy => "jekyll:compile" do
+  begin
+    require File.expand_path("deploy")
+    Deployer.deploy!
+  rescue LoadError
+    puts "You're not allowed to deploy!"
+  end
+end
