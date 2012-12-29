@@ -1,11 +1,12 @@
 ---
 title: Cookie refactoring
-layout: default
+layout: post
 ---
 
 Cookie refactoring
 ------------------
 
+{% excerpt %}
 <time datetime="2012-07-01">July 1, 2012</time>
 
 I recently found [pelusa](https://github.com/codegram/pelusa) and decided to give it a try.
@@ -16,6 +17,7 @@ and decided to look into one of the problems from the report:
 > lib/savon/client.rb:  
 > Doesn’t use more than one indentation level inside methods  
 > &nbsp; &nbsp; There’s too much indentation in lines 111.
+{% endexcerpt %}
 
 The code it complained about persists cookies and adds them to the next request:
 
