@@ -10,7 +10,7 @@ Cookie refactoring
 
 I recently found [pelusa](https://github.com/codegram/pelusa) and decided to give it a try.
 Pelusa is a static analysis tool that benefits from [Rubinius’](http://rubini.us) advanced support
-for working with an abstract syntax tree. I ran pelusa against [Savon](https://github.com/rubiii/savon)
+for working with an abstract syntax tree. I ran pelusa against [Savon](https://github.com/savonrb/savon)
 and decided to look into one of the problems from the report:
 
 > lib/savon/client.rb:  
@@ -45,11 +45,11 @@ set_cookie(response.headers)
 ### Why does Savon know about cookies?
 
 Savon reads the “Set-Cookie” header from the response and sets the “Cookie” header on the request.
-But both request and response are not part of Savon. They are provided by [HTTPI](https://github.com/rubiii/httpi)
+But both request and response are not part of Savon. They are provided by [HTTPI](https://github.com/savonrb/httpi)
 which is a wrapper for various HTTP clients.
 
 And cookie handling sounds like something that should be handled by the HTTP layer. So I
-[removed the code from Savon](https://github.com/rubiii/savon/commit/92f15f) and cleaned up the
+[removed the code from Savon](https://github.com/savonrb/savon/commit/92f15f) and cleaned up the
 specs. Instead of working with cookies, Savon now simply passes the last response to a new
 method on the request:
 
@@ -128,7 +128,7 @@ end
 
 The reason for me to share this refactoring story, is that it was a great lesson for me.
 It’s all about responsibilities. Question your code and you will eventually be
-[happy with the result](https://github.com/rubiii/httpi/commit/a9e449).
+[happy with the result](https://github.com/savonrb/httpi/commit/a9e449).
 
 
 Ps. I slightly modified some examples for this context and the final commit contains
