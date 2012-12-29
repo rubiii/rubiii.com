@@ -1,7 +1,7 @@
 source :rubygems
 
 gem "rake"
-gem "jekyll", :path => "../jekyll"
+gem "jekyll"
 gem "compass", "~> 0.10.6"
 
 gem 'redcarpet'
