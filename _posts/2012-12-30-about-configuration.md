@@ -38,7 +38,7 @@ But if you don't carefully choose which options to support, this will cause prob
 
 The problem of course is global state. It's the reason why it was not possible to configure Savon to use a
 [logger per SOAP service](https://github.com/savonrb/savon/issues/84) and to
-[connect to two elasticsearch clusters](https://github.com/karmi/tire/issues/318) when using Tire.
+[connect to two elasticsearch clusters](https://github.com/karmi/tire/issues/318) when using Tire (sorry Karel).
 
 So even though it might be convenient to slap a `.configure` method on a Class or Module, please think twice
 about whether your options are safe to be used globally. From my experience, it's almost always better to
